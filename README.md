@@ -28,7 +28,7 @@ TIPS：
 
 ### 服务器方面
 
-1.ssh tangtao@210.20.96.136                       ssh  用户名@服务器IP   
+1.ssh  用户名@服务器IP ，例如ssh tangtao@210.20.96.136 
 
 然后输入密码就可以
 
@@ -37,6 +37,10 @@ TIPS：
 3.本地与服务器之间文件和代码的上传和下载
 
 文件的话，scp命令即可，要是习惯桌面，windows上推荐软件winscp，mac上推荐Cyberduck，传输协议SFTP；代码的话，可以当做文件处理，本地改好再传，要是觉得不方便，可以利用pycharm专业版连接服务器，直接联通本地和服务器；
+PS：scp例子，rsync可以断点续传，也可以挂后天
+文件夹  scp -r   /Users/tang/Desktop/test   tangtao@172.18.167.4:data/imageNet2012/
+文件  scp -r   /Users/tang/Desktop/temp.txt   tangtao@172.18.167.4:temp.txt
+rsync -P --rsh=ssh /Users/tang/Desktop/ILSVRC2012_img_val.tar tangtao@172.18.167.4:data/imageNet2012/ILSVRC2012_img_val.tar
 
 4.shell
 
@@ -45,10 +49,12 @@ mac和ubuntu就原生的shell的就非常棒了；windows上其实winscp也有�
 5.服务器满了
 
 正常给你开的服务器是在home下的，home分的盘可能会因为用户的增加而不够用，这时候你可能传数据也传不上，存模型也存不了；所以通常服务器都会后加磁盘，你可以cd ..到home，然后cd .. 到主目录，主目录下可能就会有data(原始)，data1，data2等等磁盘，进去mkdir一个文件夹使用就可以啦
+PS:计算一个文件夹，比如data1大小 du -h  以及 剩余空间 df -hl
 
 ### 组会、报告、周报等方面
 
 PPT或者报告，如果是引用的别人的工作，PPT当页，或者报告的最后，一定给出链接和作者；
+
 ### 其他
 
 和师兄师姐老师们搞好关系，多动手实验，不懂就多问，不用不好意思
