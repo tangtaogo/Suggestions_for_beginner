@@ -4,7 +4,7 @@
 
 0.可以先直接搜索一下相关博客等了解一下这个方向是干什么的，前景和意义，有个大概的定位和了解
 
-1.1搜寻相关的综述，可以先看简单的博客综述总结，或者知乎专栏，主要了解方向的：起源，传统方法，深度学习方法，以及现在常用的方法和进展，了解现在能做的最好方法思路的performance以及瓶颈在哪里(了解坑的方向以及坑的深浅)，通常各种会议或者论坛也会有相关报告，可以直接B站搜相关方向的视频
+1.1搜寻相关的综述，可以先看简单的博客综述总结，或者知乎专栏，主要了解方向的：起源，传统方法，深度学习方法，以及现在常用的方法和进展，了解现在能做的最好方法思路的performance以及瓶颈在哪里(了解坑的方向以及坑的深浅)，通常各种会议或者论坛也会有相关报告，可以直接B站搜相关方向的视频，很建议B站上多看看课程和报告
 
 1.2在前面基础的了解下，可以看论文的survey，通常survey里面方法比较详细，比博客要好，能够更好的了解方向的整个发展
 
@@ -37,9 +37,13 @@ TIPS：
 3.本地与服务器之间文件和代码的上传和下载
 
 文件的话，scp命令即可，要是习惯桌面，windows上推荐软件winscp，mac上推荐Cyberduck，传输协议SFTP；代码的话，可以当做文件处理，本地改好再传，要是觉得不方便，可以利用pycharm专业版连接服务器，直接联通本地和服务器；
-PS：scp例子，rsync可以断点续传，也可以挂后天
+
+PS：scp例子，rsync可以断点续传，也可以挂后台
+
 文件夹  scp -r   /Users/tang/Desktop/test   tangtao@172.18.167.4:data/imageNet2012/
+
 文件  scp -r   /Users/tang/Desktop/temp.txt   tangtao@172.18.167.4:temp.txt
+
 rsync -P --rsh=ssh /Users/tang/Desktop/ILSVRC2012_img_val.tar tangtao@172.18.167.4:data/imageNet2012/ILSVRC2012_img_val.tar
 
 4.shell
@@ -49,6 +53,7 @@ mac和ubuntu就原生的shell的就非常棒了；windows上其实winscp也有�
 5.服务器满了
 
 正常给你开的服务器是在home下的，home分的盘可能会因为用户的增加而不够用，这时候你可能传数据也传不上，存模型也存不了；所以通常服务器都会后加磁盘，你可以cd ..到home，然后cd .. 到主目录，主目录下可能就会有data(原始)，data1，data2等等磁盘，进去mkdir一个文件夹使用就可以啦
+
 PS:计算一个文件夹，比如data1大小 du -h  以及 剩余空间 df -hl
 
 ### 组会、报告、周报等方面
@@ -57,5 +62,41 @@ PPT或者报告，如果是引用的别人的工作，PPT当页，或者报告�
 
 ### 其他
 
-和师兄师姐老师们搞好关系，多动手实验，不懂就多问，不用不好意思
+1.和师兄师姐老师们搞好关系，多动手实验，不懂就多问，不用不好意思
+
+2.做好备份
+
+### 其他命令
+
+##### conda&list
+
+conda安装：建议清华源下载.sh文件，然后sh  xxxx.sh，注意中间有几个让你选择的过程，看完手册，安装目录yes就行，安装完有个东西一点注意，就是是否添加到环境变量，默认是NO，别按回车，输入yes，这样后面就不用自己添加到环境变量了，最后一个让你是否安装vscode，选no就可以；安装好之后，重启一下shell就行，然后输python，应该就是conda的python了
+
+conda env list
+
+conda list
+
+pip list
+
+conda create --name xxxx python=3.x
+
+source activate xxxxx(不加环境名，就是base)
+
+source deactivate
+
+conda的环境可以到导出yml文件
+
+#### CV常用数据集
+
+ImageNet2012 处理 val&train，见此项目
+
+coco   json
+
+voc  vos数据集自己制作的话，推荐使用labelImg
+
+
+
+
+
+
 
