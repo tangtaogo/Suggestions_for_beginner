@@ -30,6 +30,9 @@ TIPS：
 
 5.shell跑实验时间过长容易断开，可以设置shell不断开，最好设置一下，然后此外我推荐的解决方案是用nohup命令后台挂起，然后就可以去干自己的事情，例nohup python train.py &，这样输出都会存到nohup.out里面
 
+6.多卡的机器，通常tf和torch之间有些玄学不能共存的问题，最好都用torch；然后八块卡最好也别独占，可以设定自己用的GPU的块号 CUDA_VISIBLE_DEVICES=1 python train.py  或者代码中 import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+
 ### 服务器方面
 
 1.ssh  用户名@服务器IP ，例如ssh tangtao@210.20.96.136 
