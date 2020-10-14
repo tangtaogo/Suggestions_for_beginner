@@ -91,7 +91,7 @@ source activate xxxxx(不加环境名，就是base)
 
 source deactivate
 
-conda的环境可以到导出yml文件
+conda的环境可以到导出yml文件  conda env export > /home/tangtao/torch.yaml   conda env export > torch.yaml
 
 #### CV常用数据集
 
