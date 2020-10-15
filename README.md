@@ -40,6 +40,8 @@ TIPS：
 
 假如我们要切换到 0：bash 这个窗口，步骤如下：第一步：按 Ctrl-B 组合键，然后松开。第二步：按数字 0 键。
 
+删除：Ctrl+d 组合键
+
 6.多卡的机器，通常tf和torch之间有些玄学不能共存的问题，最好都用torch；然后八块卡最好也别独占，可以设定自己用的GPU的块号 CUDA_VISIBLE_DEVICES=1 python train.py  或者代码中 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 
