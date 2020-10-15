@@ -30,6 +30,16 @@ TIPS：
 
 5.shell跑实验时间过长容易断开，可以设置shell不断开，最好设置一下，然后此外我推荐的解决方案是用nohup命令或者tmux命令后台挂起，然后就可以去干自己的事情，例nohup python train.py &，这样输出都会存到nohup.out里面
 
+新建 tmux new -s dna  
+
+关闭：第一步：输入组合键 Ctrl+B，然后松开。第二步：输入字母 d。
+
+重连 tmux ls  ;  tmux a -t dna
+
+再创建一个窗口：第一步：按 Ctrl+B 组合键，然后松开。第二步：再单独按一下 c 键
+
+假如我们要切换到 0：bash 这个窗口，步骤如下：第一步：按 Ctrl-B 组合键，然后松开。第二步：按数字 0 键。
+
 6.多卡的机器，通常tf和torch之间有些玄学不能共存的问题，最好都用torch；然后八块卡最好也别独占，可以设定自己用的GPU的块号 CUDA_VISIBLE_DEVICES=1 python train.py  或者代码中 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 
