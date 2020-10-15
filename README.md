@@ -35,6 +35,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 
 7.kill -9 来强制终止退出 
 
+
 ### 服务器方面
 
 1.ssh  用户名@服务器IP ，例如ssh tangtao@210.20.96.136 
@@ -64,6 +65,9 @@ mac和ubuntu就原生的shell的就非常棒了；windows上其实winscp也有�
 正常给你开的服务器是在home下的，home分的盘可能会因为用户的增加而不够用，这时候你可能传数据也传不上，存模型也存不了；所以通常服务器都会后加磁盘，你可以cd ..到home，然后cd .. 到主目录，主目录下可能就会有data(原始)，data1，data2等等磁盘，进去mkdir一个文件夹使用就可以啦
 
 PS:计算一个文件夹，比如data1大小 du -h  以及 剩余空间 df -hl
+
+6.watch  nvidia-smi
+
 
 ### 组会、报告、周报等方面
 
