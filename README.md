@@ -33,6 +33,8 @@ TIPS：
 6.多卡的机器，通常tf和torch之间有些玄学不能共存的问题，最好都用torch；然后八块卡最好也别独占，可以设定自己用的GPU的块号 CUDA_VISIBLE_DEVICES=1 python train.py  或者代码中 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 
+7.kill -9 来强制终止退出 
+
 ### 服务器方面
 
 1.ssh  用户名@服务器IP ，例如ssh tangtao@210.20.96.136 
