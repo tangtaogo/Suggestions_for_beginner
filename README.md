@@ -35,6 +35,8 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 
 7.kill -9 来强制终止退出 
 
+8.在Ubuntu下 使用Tab键报错：cannot create temp file for here-document: no space left on device
+解决办法：rm -rf /tmp/*
 
 ### 服务器方面
 
