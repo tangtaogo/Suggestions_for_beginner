@@ -38,6 +38,8 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 8.在Ubuntu下 使用Tab键报错：cannot create temp file for here-document: no space left on device
 解决办法：rm -rf /tmp/*
 
+9.find ./ -name ‘xxx.*’ -exec rm {} ;
+
 ### 服务器方面
 
 1.ssh  用户名@服务器IP ，例如ssh tangtao@210.20.96.136 
