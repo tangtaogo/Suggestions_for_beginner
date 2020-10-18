@@ -52,6 +52,9 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 
 9.find ./ -name ‘xxx.*’ -exec rm {} ;
 
+10.mv /home/tangtao/DNA /media/Disk/tangtao/
+
+
 ### 服务器方面
 
 1.ssh  用户名@服务器IP ，例如ssh tangtao@210.20.96.136 
