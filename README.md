@@ -27,6 +27,17 @@ git commit -m "添加了hello.txt"
 
 git push origin master
 
+git stash
+
+git branch -c tangtao
+
+git checkout master
+
+git pull
+
+git checkout tangtao
+
+git rebase
 
 ### 关于怎么研究一个方向的：
 
