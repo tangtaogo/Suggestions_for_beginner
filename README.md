@@ -19,6 +19,8 @@ if batch_iter % frequence == 0 or last_batch_iter:
 
 4.git
 
+git clone  git@github.com:Trent-tangtao/LearningGit.git
+
 git add hello.txt
 
 git commit -m "添加了hello.txt"
