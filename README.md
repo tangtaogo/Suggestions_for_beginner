@@ -19,6 +19,8 @@ if batch_iter % frequence == 0 or last_batch_iter:
 
 4.git教程https://blog.csdn.net/HcJsJqJSSM/article/details/84558229
 
+私有库要 git clone http://用户名:密码@github.com/changlin31/SelfSupDNA.git
+
 git clone  git@github.com:Trent-tangtao/LearningGit.git
 
 git add hello.txt
