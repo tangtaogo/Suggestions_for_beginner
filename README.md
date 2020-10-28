@@ -17,19 +17,21 @@ if batch_iter % frequence == 0 or last_batch_iter:
 
 3.看效果可以用tenserboard检查一下存下来的feature map
 
-4.git
+4.git教程https://blog.csdn.net/HcJsJqJSSM/article/details/84558229
 
 git clone  git@github.com:Trent-tangtao/LearningGit.git
 
 git add hello.txt
 
-git commit -m "添加了hello.txt"
-
-git push origin master
+git commit -m "添加了hello.txt"  +   git push origin master
 
 git stash
 
-git branch -c tangtao
+git branch -a(查看所有分支包括本地分支和远程分支).
+
+git checkout -b branchname 本地创建新的分支.(直接新建一个分支然后切换至新创建的分支).就是创建加切换分支. 等价于命令：git branch branchname+git checkout branchname.
+
+git push origin branchname 将新分支推送至GitHub 
 
 git checkout master
 
