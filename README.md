@@ -1,5 +1,24 @@
 # Suggestions_for_beginner
-给本科实验室的同学的一些小技巧
+
+### learning2020
+
+1.Batchsize,lr,gpu_nums 一定得对应上
+
+2.optimizer_step，可以增大batchsize，但是不影响显存
+
+loss = criterion(logits, target)
+loss = loss / frequence
+loss.backward()
+if batch_iter % frequence == 0 or last_batch_iter:
+  optimizer.step()
+  optimizer.zero_grad()
+  
+ frequence = 7，这个是每7步才step一次optimizer
+
+3.看效果可以用tenserboard检查一下存下来的feature map
+
+
+
 ### 关于怎么研究一个方向的：
 
 0.可以先直接搜索一下相关博客等了解一下这个方向是干什么的，前景和意义，有个大概的定位和了解
@@ -129,8 +148,6 @@ ImageNet2012 处理 val&train，见此项目
 coco   json
 
 voc  vos数据集自己制作的话，推荐使用labelImg
-
-
 
 
 
