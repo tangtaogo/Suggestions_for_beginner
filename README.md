@@ -17,7 +17,14 @@ if batch_iter % frequence == 0 or last_batch_iter:
 
 3.看效果可以用tenserboard检查一下存下来的feature map
 
-4.git branch
+4.git
+
+git add hello.txt
+
+git commit -m "添加了hello.txt"
+
+git push origin master
+
 
 ### 关于怎么研究一个方向的：
 
