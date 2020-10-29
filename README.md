@@ -15,7 +15,9 @@ if batch_iter % frequence == 0 or last_batch_iter:
   
  frequence = 7，这个是每7步才step一次optimizer
 
-3.看效果可以用tenserboard检查一下存下来的feature map
+3.看效果可以用tenserboard检查一下存下来的feature map https://www.cnblogs.com/tengge/p/6376073.html
+
+tensorboard --logdir=logs
 
 4.git教程https://blog.csdn.net/HcJsJqJSSM/article/details/84558229
 
