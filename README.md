@@ -53,6 +53,7 @@ git rebase
 
 8.Linux ln（英文全拼：link files）命令是一个非常重要命令，它的功能是为某一个文件在另外一个位置建立一个同步的链接。
 
+ ln -s /data3/wubowen/imagenet data
 
 9.find_unused_parameters=True
 
