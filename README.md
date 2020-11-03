@@ -57,6 +57,10 @@ git rebase
 
 9.find_unused_parameters=True
 
+10.load那里，要加个strict＝False,因为改了model,要传到pytorch  nn.module的方法里，这个函数里面调用了self.load_state_dict之类的吧
+
+https://blog.csdn.net/hungryof/article/details/81364487
+
 ### 关于怎么研究一个方向的：
 
 0.可以先直接搜索一下相关博客等了解一下这个方向是干什么的，前景和意义，有个大概的定位和了解
