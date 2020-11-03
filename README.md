@@ -61,6 +61,8 @@ git rebase
 
 https://blog.csdn.net/hungryof/article/details/81364487
 
+11.resume和load不太一样，resume还会load optimizer，就是动量啥的都继续，正常应该都用resume
+
 ### 关于怎么研究一个方向的：
 
 0.可以先直接搜索一下相关博客等了解一下这个方向是干什么的，前景和意义，有个大概的定位和了解
