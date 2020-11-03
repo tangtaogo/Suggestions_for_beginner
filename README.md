@@ -63,7 +63,9 @@ https://blog.csdn.net/hungryof/article/details/81364487
 
 11.resume和load不太一样，resume还会load optimizer，就是动量啥的都继续，正常应该都用resume
 
-12.htop，看cpu占用率
+12.htop，看cpu占用率,https://linux.cn/article-3141-1.html
+
+13.batchsize,不一定非得是32，64这些，可以随意
 
 ### 关于怎么研究一个方向的：
 
