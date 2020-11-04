@@ -73,6 +73,31 @@ https://blog.csdn.net/hungryof/article/details/81364487
 
 16.x.view(x.size(0), -1)   https://blog.csdn.net/whut_ldz/article/details/78882532
 
+17.apex混合精度加速
+
+Apex
+
+# Upgrade gcc to version 7
+
+$ sudo yum install centos-release-scl
+
+$ sudo yum install devtoolset-7-gcc*
+
+$ scl enable devtoolset-7 bash
+
+$ which gcc
+
+$ gcc --version
+ 
+# Install Apex
+
+$ git clone https://github.com/NVIDIA/apex.git
+
+$ cd apex
+
+$ pip install -v --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
+
+
 
 ### 关于怎么研究一个方向的：
 
