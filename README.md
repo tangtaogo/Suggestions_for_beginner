@@ -67,6 +67,8 @@ https://blog.csdn.net/hungryof/article/details/81364487
 
 13.batchsize,不一定非得是32，64这些，可以随意
 
+14.__init__.py 文件的作用是将文件夹变为一个Python模块,Python 中的每个模块的包中，都有__init__.py 文件
+
 ### 关于怎么研究一个方向的：
 
 0.可以先直接搜索一下相关博客等了解一下这个方向是干什么的，前景和意义，有个大概的定位和了解
