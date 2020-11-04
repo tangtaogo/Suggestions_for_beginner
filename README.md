@@ -71,6 +71,9 @@ https://blog.csdn.net/hungryof/article/details/81364487
 
 15.lamada匿名表达式，例如：lambda x,y:x+y
 
+16.x.view(x.size(0), -1)   https://blog.csdn.net/whut_ldz/article/details/78882532
+
+
 ### 关于怎么研究一个方向的：
 
 0.可以先直接搜索一下相关博客等了解一下这个方向是干什么的，前景和意义，有个大概的定位和了解
