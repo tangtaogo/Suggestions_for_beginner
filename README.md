@@ -69,6 +69,8 @@ https://blog.csdn.net/hungryof/article/details/81364487
 
 14.__init__.py 文件的作用是将文件夹变为一个Python模块,Python 中的每个模块的包中，都有__init__.py 文件
 
+15.lamada匿名表达式，例如：lambda x,y:x+y
+
 ### 关于怎么研究一个方向的：
 
 0.可以先直接搜索一下相关博客等了解一下这个方向是干什么的，前景和意义，有个大概的定位和了解
