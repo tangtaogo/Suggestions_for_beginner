@@ -47,7 +47,9 @@ git rebase
 
 5.跨卡同步BN
 
-6.pytorch hook
+6.代码里面：pytorch hook：帮你做一些代码主体之外的事情；
+
+Registry：register就是相当于你在config里写函数名的字符串可以自动调用这个函数 
 
 7.@ Python装饰器
 
