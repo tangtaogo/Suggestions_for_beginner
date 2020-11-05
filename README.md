@@ -87,7 +87,9 @@ $ git clone https://github.com/NVIDIA/apex.git
 $ cd apex
 $ pip install -v --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
 
+18.batchsize, step(iteration), epoch 含义, https://blog.csdn.net/wcy23580/article/details/90082221?utm_medium=distribute.pc_relevant.none-task-blog-title-2&spm=1001.2101.3001.4242
 
+19.lr_scheduler：调整学习率,https://blog.csdn.net/qyhaill/article/details/103043637
 
 ### 关于怎么研究一个方向的：
 
