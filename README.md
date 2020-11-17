@@ -183,6 +183,8 @@ PS:计算一个文件夹，比如data1大小 du -h  以及 剩余空间 df -hl
 
 PPT或者报告，如果是引用的别人的工作，PPT当页，或者报告的最后，一定给出链接和作者；
 
+正常的模板：第一页 标题和作者；然后 motivation，introduction，related work，method，experiment，最后最好加上自己的思考，rethinking，大体结构和论文一样
+
 ### 其他
 
 1.和师兄师姐老师们搞好关系，多动手实验，不懂就多问，不用不好意思
