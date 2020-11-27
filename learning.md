@@ -2,14 +2,31 @@
 
 2.多GPU分布式训练  https://blog.csdn.net/qq_34914551/article/details/103236807
 
-3.BN的问题 
-
-https://zhuanlan.zhihu.com/p/65439075
+3.BN的问题   https://zhuanlan.zhihu.com/p/65439075
 
 evaluation的时候要重新统计BN，bn的running statistics 需要重新统计一遍
 
 BN会保存训练的均值和方差并求滑动平均来作为eval时候的均值和方差，这个本来是准的，但是在supernet里，统计的是多条路径的均值和方差，所以对于单条路径是不准的，需要重新统计单条路径的
-# Suggestions_for_beginner
+
+4.tensor.clone() 和 tensor.detach()  https://zhuanlan.zhihu.com/p/148061684
+
+5.GPU和显存分析   https://zhuanlan.zhihu.com/p/31558973 https://blog.csdn.net/swocky/article/details/105922049 https://zhuanlan.zhihu.com/p/91485607
+
+6.requires_grad和autograd.no_grad，固定部分参数进行网络训练
+https://blog.csdn.net/g11d111/article/details/80840310  https://www.jianshu.com/p/fcafcfb3d887
+
+7.查看预训练模型的参数 https://blog.csdn.net/feizai1208917009/article/details/103598233
+pretrained_dict = torch.load(path)
+for k, v in pretrained_dict.items():  # k 参数名 v 对应参数值
+        print(k)
+
+8.python中实现问号表达式 max = a if a > b else b  https://www.cnblogs.com/xxiong1031/articles/7099901.html
+
+9.RuntimeError: Expected object of device type cuda but got device type cpu for argument #2 ‘target’ in call to _thnn_binary_cross_entropy_forward
+https://blog.csdn.net/weixin_37913042/article/details/103009733
+
+10.python的星号（*）和双星号（**）  https://www.cnblogs.com/empty16/p/6229538.html
+
 
 ### learning2020
 
@@ -56,7 +73,7 @@ git checkout tangtao
 
 git rebase
 
-5.跨卡同步BN
+5.跨卡同步BN   Sync BN
 
 6.代码里面：pytorch hook：帮你做一些代码主体之外的事情；
 
