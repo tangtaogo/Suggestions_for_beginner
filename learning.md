@@ -1,3 +1,12 @@
+### 3-learning2020
+1.git rebase：  rebase的话还是两个分支，只是把那些commit复制过来，cherry pick也是，现在rebase有很多冲突了，不合也行
+
+https://www.yiibai.com/git/git_rebase.html
+
+2.seed，随机数种子固定：seed不固定，会不会不同卡走的是不同路径？
+
+### 2-learning2020
+
 1.model.train和model.eval   https://blog.csdn.net/qq_38410428/article/details/101102075
 
 2.多GPU分布式训练  https://blog.csdn.net/qq_34914551/article/details/103236807
@@ -28,7 +37,7 @@ https://blog.csdn.net/weixin_37913042/article/details/103009733
 10.python的星号（*）和双星号（**）  https://www.cnblogs.com/empty16/p/6229538.html
 
 
-### learning2020
+### 1-learning2020
 
 1.Batchsize,lr,gpu_nums 一定得对应上
 
